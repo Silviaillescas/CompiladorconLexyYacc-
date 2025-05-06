@@ -56,6 +56,5 @@ void yyerror(const char *s) {
 int main() {
     printf("Ingrese expresiones:\n");
     yyparse();
-    return 0;
+    return 0;
 }
-
