@@ -8,6 +8,7 @@ int yylex();
 
 %token NUMBER IDENTIFIER
 %token PLUS MINUS TIMES DIVIDE ASSIGN SEMICOLON
+%token LPAREN RPAREN
 
 %%
 
@@ -45,6 +46,8 @@ factor:
     NUMBER
     |
     IDENTIFIER
+    |
+    LPAREN expression RPAREN
     ;
 
 %%
